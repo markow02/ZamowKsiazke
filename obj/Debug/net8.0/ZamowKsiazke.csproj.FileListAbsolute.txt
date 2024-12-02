@@ -242,6 +242,7 @@ C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsi
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.RazorAssemblyInfo.cache
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.RazorAssemblyInfo.cs
+C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.sourcelink.json
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\scopedcss\bundle\ZamowKsiazke.styles.css
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\scopedcss\projectbundle\ZamowKsiazke.bundle.scp.css

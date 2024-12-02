@@ -6,6 +6,7 @@ namespace ZamowKsiazke.Controllers
 {
     public class StoreController : Controller
     {
+
         private readonly ZamowKsiazkeContext _context;
         public StoreController(ZamowKsiazkeContext context) // Add constructor to initialize _context
         {
