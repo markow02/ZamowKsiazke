@@ -34,7 +34,7 @@ namespace ZamowKsiazke.Controllers
             }
 
             var book = await _context.Book
-                .FirstOrDefaultAsync(m => m.id == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (book == null)
             {
                 return NotFound();
@@ -88,7 +88,7 @@ namespace ZamowKsiazke.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("id,Title,Description,Language,ISBN,DatePublished,Price,Author,ImageUrl")] Book book)
         {
-            if (id != book.id)
+            if (id != book.Id)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace ZamowKsiazke.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BookExists(book.id))
+                    if (!BookExists(book.Id))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace ZamowKsiazke.Controllers
             }
 
             var book = await _context.Book
-                .FirstOrDefaultAsync(m => m.id == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (book == null)
             {
                 return NotFound();
@@ -151,7 +151,7 @@ namespace ZamowKsiazke.Controllers
 
         private bool BookExists(int id)
         {
-            return _context.Book.Any(e => e.id == id);
+            return _context.Book.Any(e => e.Id == id);
         }
     }
 }

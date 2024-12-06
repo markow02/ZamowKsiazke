@@ -1,16 +1,29 @@
 ﻿using ZamowKsiazke.Models;
 using Microsoft.EntityFrameworkCore;
 using ZamowKsiazke.Data;
-using System.Configuration;
-using ZamowKsiazke;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Http;
+//using ZamowKsiazke.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure services
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<ZamowKsiazkeContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ZamowKsiazkeContext")
                          ?? throw new InvalidOperationException("Connection string 'ZamowKsiazkeContext' not found.")));
+
+//builder.Services.AddDefaultIdentity<DefaultUser>(options => options.SignIn.RequireConfirmedAccount = true)
+//    .AddRoles<IdentityRole>()
+//    .AddEntityFrameworkStores<ZamowKsiazkeContext>();
+
+//builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddScoped<Cart>(sp => Cart.GetCart(sp));
 
 builder.Services.AddDistributedMemoryCache();
 
@@ -48,12 +61,13 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Store}/{action=Index}/{id?}");
+app.MapRazorPages();
 
 app.Run();
- 

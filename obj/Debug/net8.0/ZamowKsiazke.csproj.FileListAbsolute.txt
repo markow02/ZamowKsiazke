@@ -255,10 +255,10 @@ C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\staticwe
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ZamowKsiazke.props
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ZamowKsiazke.props
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsi.05C2FBC7.Up2Date
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.dll
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\refint\ZamowKsiazke.dll
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.pdb
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.genruntimeconfig.cache
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ref\ZamowKsiazke.dll
+C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

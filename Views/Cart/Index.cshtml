@@ -1,0 +1,66 @@
+﻿@model ZamowKsiazke.Models.Cart
+
+<h1>Koszyk</h1>
+
+@if (Model.CartItems.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th> <!-- Added missing header for image column -->
+                <th>Tytuł</th>
+                <th>Cena</th>
+                <th>Ilość</th>
+                <th>Usuń</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CartItems)
+            {
+                var bookTotal = item.Book.Price * item.Quantity;
+                <tr>
+                    <td>
+                        <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@item.Book.Id"><img src="@item.Book.ImageUrl" style="height: 4em" /></a>
+                    </td>
+                    <td>
+                        <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@item.Book.Id">@item.Book.Title</a>
+                    </td>
+                    <td>
+                        @bookTotal.ToString("c")
+                    </td>
+                    <td>
+                        <a asp-controller="Cart" asp-action="ReduceQuantity" asp-route-id="@item.Book.Id"><i class="fa-solid fa-minus"></i></a>
+                        <span class="badge bg-primary text-white">@item.Quantity</span>
+                        <a asp-controller="Cart" asp-action="IncreaseQuantity" asp-route-id="@item.Book.Id"><i class="fa-solid fa-plus"></i></a>
+                    </td>
+                    <td>
+                        <!-- Add remove button or functionality here -->
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td> <!-- Added missing empty cell for image column -->
+                <td class="text-right">
+                    <strong>Suma:</strong>
+                </td>
+                <td>
+                    <strong>@Model?.GetCartTotal().ToString("c")</strong>
+                </td>
+                <td></td> <!-- Added missing empty cell for remove button column -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <a class="a-cleanup" asp-controller="Cart" asp-action="ClearCart">
+        <div class="btn btn-primary float end me-5"><i class="fa-solid fa-trash-can"></i>Wyczyść koszyk</div>
+    </a>
+}
+else
+{
+    <h3 class="text-center">Twój koszyk jest pusty</h3>
+}

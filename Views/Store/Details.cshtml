@@ -58,7 +58,7 @@
         </div>
         <div>
             <a asp-action="Index" class="btn btn-warning"><i class="fa-solid fa-backward-step"></i>&nbsp;Back</a> 
-            <a asp-action="" asp-route-id="@Model?.id" class="btn btn-primary float-end me-5 store-btn">
+            <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model?.Id" class="btn btn-primary float-end me-5 store-btn">
                 <i class="fa-solid fa-cart-plus"></i>&nbsp;Dodaj do koszyka
             </a>
         </div>

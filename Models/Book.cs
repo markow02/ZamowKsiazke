@@ -4,7 +4,7 @@ namespace ZamowKsiazke.Models
 {
     public class Book
     {
-        public int id {  get; set; }
+        public int Id {  get; set; }
 
         [Required]
         public string Title { get; set; }

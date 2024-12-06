@@ -26,7 +26,7 @@ namespace ZamowKsiazke.Controllers
             }
 
             var book = await _context.Book
-                .FirstOrDefaultAsync(m => m.id == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (book == null)
             {
                 return NotFound();
