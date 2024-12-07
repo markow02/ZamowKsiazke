@@ -23,6 +23,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("2013-9-26"),
                         Price = 139,
                         Author = "Astrid Lindgren",
+                        Description = "A fantasy novel about two brothers who embark on a journey in the land of Nangijala.",
                         ImageUrl = "/images/lejonhjärta.jpg"
                     },
 
@@ -34,6 +35,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("1991-7-4"),
                         Price = 100,
                         Author = "J. R. R. Tolkien",
+                        Description = "The first part of J.R.R. Tolkien's epic adventure The Lord of the Rings.",
                         ImageUrl = "/images/lotr.jpg"
                     },
 
@@ -45,6 +47,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("2011-6-1"),
                         Price = 91,
                         Author = "Dennis Lehane",
+                        Description = "A crime thriller about three childhood friends whose lives are shattered by a murder.",
                         ImageUrl = "/images/mystic-river.jpg"
                     },
 
@@ -56,6 +59,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("1994-1-2"),
                         Price = 166,
                         Author = "John Steinbeck",
+                        Description = "A novella about the dreams and struggles of two displaced migrant ranch workers.",
                         ImageUrl = "/images/of-mice-and-men.jpg"
                     },
 
@@ -67,6 +71,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("1994-8-18"),
                         Price = 84,
                         Author = "Ernest Hemingway",
+                        Description = "A short novel about an aging fisherman who struggles with a giant marlin far out in the Gulf Stream.",
                         ImageUrl = "/images/old-man-and-the-sea.jpg"
                     },
 
@@ -78,6 +83,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("2007-5-1"),
                         Price = 95,
                         Author = "Cormac McCarthy",
+                        Description = "A post-apocalyptic novel about a father and son's journey through a devastated landscape.",
                         ImageUrl = "/images/the-road.jpg"
                     }
                 );
