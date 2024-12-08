@@ -16,6 +16,8 @@ namespace ZamowKsiazke.Data
 
         public DbSet<Book> Book { get; set; } = default!;
         public DbSet<CartItem> CartItems { get; set; } = default!;
+        public DbSet<Order> Orders { get; set; } = default!;
+        public DbSet<OrderItem> OrderItems { get; set; } = default!;
 
     }
 }

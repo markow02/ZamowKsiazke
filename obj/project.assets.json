@@ -7602,11 +7602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke.csproj",
+      "projectUniqueName": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke\\ZamowKsiazke.csproj",
       "projectName": "ZamowKsiazke",
-      "projectPath": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke.csproj",
+      "projectPath": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke\\ZamowKsiazke.csproj",
       "packagesPath": "C:\\Users\\Marcel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\obj\\",
+      "outputPath": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7621,6 +7621,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7692,7 +7693,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „System.Text.Json” 7.0.3 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
+      "message": "Package 'System.Text.Json' 7.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
       "libraryId": "System.Text.Json",
       "targetGraphs": [
         "net8.0"

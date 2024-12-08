@@ -261,7 +261,6 @@ C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\refint\Z
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.pdb
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.genruntimeconfig.cache
 C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\ref\ZamowKsiazke.dll
-C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Marcel\source\repos\ZamowKsiazke\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Marcel\source\repos\ZamowKsiazke\bin\Debug\net8.0\appsettings.json
 C:\Users\Marcel\source\repos\ZamowKsiazke\bin\Debug\net8.0\ZamowKsiazke.staticwebassets.runtime.json
@@ -526,3 +525,4 @@ C:\Users\Marcel\source\repos\ZamowKsiazke\obj\Debug\net8.0\refint\ZamowKsiazke.d
 C:\Users\Marcel\source\repos\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.pdb
 C:\Users\Marcel\source\repos\ZamowKsiazke\obj\Debug\net8.0\ZamowKsiazke.genruntimeconfig.cache
 C:\Users\Marcel\source\repos\ZamowKsiazke\obj\Debug\net8.0\ref\ZamowKsiazke.dll
+C:\Users\Marcel\source\repos\ZamowKsiazke\ZamowKsiazke\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

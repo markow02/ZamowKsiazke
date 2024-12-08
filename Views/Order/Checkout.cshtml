@@ -1,0 +1,12 @@
+﻿@page "/checkout"
+@model ZamowKsiazke.Models.Order
+
+<form asp-action="Checkout" method="post" class="form-horizontal" role="form">
+    <h4>Potwierdź swój zakup</h4>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <div class="offset-md-2 col-md-5">
+            <button type="submit" class="btn btn-primary">Complete order</button>
+        </div>
+    </div>
+</form>
