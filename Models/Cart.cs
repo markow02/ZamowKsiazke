@@ -86,10 +86,6 @@ namespace ZamowKsiazke.Models
                     cartItem.Quantity++;
                     remainingQuantity = cartItem.Quantity;
                 }
-                else
-                {
-                    _context.CartItems.Remove(cartItem);
-                }
                 _context.SaveChanges();
             }
 

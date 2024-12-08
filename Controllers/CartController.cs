@@ -31,7 +31,7 @@ namespace ZamowKsiazke.Controllers
                 _cart.AddToCart(selectedBook, quantity: 1);
             }
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Store");
         }
 
         public IActionResult RemoveFromCart(int id)

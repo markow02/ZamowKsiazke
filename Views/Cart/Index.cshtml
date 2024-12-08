@@ -34,7 +34,7 @@
                         <a asp-controller="Cart" asp-action="IncreaseQuantity" asp-route-id="@item.Book.Id"><i class="fa-solid fa-plus"></i></a>
                     </td>
                     <td>
-                        <!-- Add remove button or functionality here -->
+                        <a asp-controller="Cart" asp-action="RemoveFromCart" asp-route-id="@item.Book.Id" class="text-danger"><i class="fa-solid fa-xmark"></i></a>
                     </td>
                 </tr>
             }
