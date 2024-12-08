@@ -1,69 +1,43 @@
 ﻿@model ZamowKsiazke.Models.Book
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Szczegóły";
 }
 
-<h1>Details</h1>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Szczegóły</h1>
 
-<div class="row">
-    <div class="col-5">
-        <div>
-            <h4>Book</h4>
-            <hr />
-            <dl class="row">
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.Title)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.Title)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.Author)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.Author)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.Language)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.Language)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.ISBN)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.ISBN)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.DatePublished)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.DatePublished)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.Price)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.Price)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.Description)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.Description)
-                </dd>
-            </dl>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">@Model.Title</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-3">Autor</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Author)</dd>
+                        <dt class="col-sm-3">Język</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Language)</dd>
+                        <dt class="col-sm-3">ISBN</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.ISBN)</dd>
+                        <dt class="col-sm-3">Data publikacji</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.DatePublished)</dd>
+                        <dt class="col-sm-3">Cena</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Price)</dd>
+                        <dt class="col-sm-3">Opis</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <a asp-action="Index" class="btn btn-warning"><i class="fa-solid fa-backward-step"></i>&nbsp;Powrót</a>
+                <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model?.Id" class="btn btn-primary ms-3">
+                    <i class="fa-solid fa-cart-plus"></i>&nbsp;Dodaj do koszyka
+                </a>
+            </div>
         </div>
-        <div>
-            <a asp-action="Index" class="btn btn-warning"><i class="fa-solid fa-backward-step"></i>&nbsp;Back</a> 
-            <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model?.Id" class="btn btn-primary float-end me-5 store-btn">
-                <i class="fa-solid fa-cart-plus"></i>&nbsp;Dodaj do koszyka
-            </a>
+        <div class="col-md-4 text-center">
+            <img src="@Model.ImageUrl" class="img-fluid img-thumbnail" style="max-height: 600px; width: auto;" />
         </div>
-    </div>
-    <div class="col-4">
-        <img src="@Model.ImageUrl" class="w-100" />
     </div>
 </div>

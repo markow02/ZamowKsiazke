@@ -1,86 +1,63 @@
 ﻿@model IEnumerable<ZamowKsiazke.Models.Book>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Indeks";
 
-    string HasImage(Book book)
+    string HasImage(ZamowKsiazke.Models.Book book)
     {
         if (!string.IsNullOrEmpty(book.ImageUrl))
         {
-            return "fa-solid fa-check";
+            return "fa-solid fa-check text-success";
         }
         else
         {
-            return "fa-solid fa-x";
+            return "fa-solid fa-x text-danger";
         }
     }
 }
 
-<h1>Index</h1>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Indeks</h1>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">
-        <i class="fa-solid fa-book"></i> Add Book
-    </a>
-</p>
+    <p class="text-center">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="fa-solid fa-book"></i> Dodaj książkę
+        </a>
+    </p>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Author)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Language)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ISBN)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DatePublished)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                Has image
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Author)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Language)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ISBN)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DatePublished)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                <i class="@HasImage(item)"></i>
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a> |
-                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-success"><i class="fa-solid fa-circle-info"></i></a> |
-                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover text-center">
+            <thead class="thead-light">
+                <tr>
+                    <th>Tytuł</th>
+                    <th>Autor</th>
+                    <th>Język</th>
+                    <th>ISBN</th>
+                    <th>Data publikacji</th>
+                    <th>Cena</th>
+                    <th>Ma obraz</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="align-middle">@Html.DisplayFor(modelItem => item.Title)</td>
+                        <td class="align-middle">@Html.DisplayFor(modelItem => item.Author)</td>
+                        <td class="align-middle">@Html.DisplayFor(modelItem => item.Language)</td>
+                        <td class="align-middle">@Html.DisplayFor(modelItem => item.ISBN)</td>
+                        <td class="align-middle">@Html.DisplayFor(modelItem => item.DatePublished)</td>
+                        <td class="align-middle">@Html.DisplayFor(modelItem => item.Price)</td>
+                        <td class="align-middle"><i class="@HasImage(item)"></i></td>
+                        <td class="align-middle">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-success btn-sm"><i class="fa-solid fa-circle-info"></i></a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

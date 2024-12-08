@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Http;
-//using ZamowKsiazke.Services;
+using ZamowKsiazke.Services;
+using ZamowKsiazke.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,7 @@ builder.Services.AddDbContext<ZamowKsiazkeContext>(options =>
 //builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<Cart>(sp => Cart.GetCart(sp));
+builder.Services.AddScoped<IOrderService, OrderService>(); // Register IOrderService
 
 builder.Services.AddDistributedMemoryCache();
 

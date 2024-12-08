@@ -1,0 +1,54 @@
+﻿@model ZamowKsiazke.Models.Order
+
+<h1>Dziękujemy za zamówienie!</h1>
+
+<h5 class="mt-5">Numer zamówienia: @Model.Id</h5>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>Obraz</th>
+                <th>Tytuł</th>
+                <th>Cena</th>
+                <th>Ilość</th>
+                <th>Razem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderItems)
+            {
+                var itemTotal = item.Book.Price * item.Quantity;
+                <tr>
+                    <td>
+                        <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@item.Book.Id">
+                            <img src="@item.Book.ImageUrl" class="img-thumbnail" style="height: 4em" />
+                        </a>
+                    </td>
+                    <td>
+                        <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@item.Book.Id">@item.Book.Title</a>
+                    </td>
+                    <td>
+                        @item.Book.Price.ToString("c")
+                    </td>
+                    <td>
+                        @item.Quantity
+                    </td>
+                    <td>
+                        @itemTotal.ToString("c")
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" class="text-right">
+                    <strong>Suma:</strong>
+                </td>
+                <td>
+                    <strong>@Model.OrderTotal.ToString("c")</strong>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
