@@ -60,7 +60,7 @@ namespace ZamowKsiazke.Models
                     {
                         Title = "Im mroczniej tym lepiej",
                         Language = "Polski",
-                        ISBN = "9780062068408",
+                        ISBN = "9780021368408",
                         DatePublished = DateTime.Parse("2024-10-2"),
                         Price = 59,
                         Author = "Stephen King",
@@ -74,7 +74,7 @@ namespace ZamowKsiazke.Models
                     {
                         Title = "Instytut",
                         Language = "Polski",
-                        ISBN = "9780062068408",
+                        ISBN = "9780765068408",
                         DatePublished = DateTime.Parse("2024-10-4"),
                         Price = 59,
                         Author = "Stephen King",
@@ -162,7 +162,7 @@ namespace ZamowKsiazke.Models
                     {
                         Title = "Cienie pośród mroku Tom 6",
                         Language = "Polski",
-                        ISBN = "9780062068689",
+                        ISBN = "97800620222689",
                         DatePublished = DateTime.Parse("2024-12-5"),
                         Price = 59,
                         Author = "Remigiusz Mróz",
@@ -202,7 +202,7 @@ namespace ZamowKsiazke.Models
                     {
                         Title = "Opowiastki na zimowe wieczory. Kubuś i Przyjaciele",
                         Language = "Polski",
-                        ISBN = "9780062068334",
+                        ISBN = "9780062988334",
                         DatePublished = DateTime.Parse("2024-9-9"),
                         Price = 35,
                         Author = "Katarzyna Łączyńska",
