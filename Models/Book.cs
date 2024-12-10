@@ -9,7 +9,7 @@ namespace ZamowKsiazke.Models
         [Required]
         public string Title { get; set; }
 
-        [MaxLength(100)]
+        [MaxLength(1000)]
         public string Description { get; set; }
         public string Language { get; set; }
 

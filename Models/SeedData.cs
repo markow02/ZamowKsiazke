@@ -56,7 +56,7 @@ namespace ZamowKsiazke.Models
                         Title = "Im mroczniej tym lepiej",
                         Language = "Polski",
                         ISBN = "9780021368408",
-                        DatePublished = DateTime.Parse("2024-10-2"),
+                        DatePublished = DateTime.Parse("2024-10-02"),
                         Price = 59,
                         Author = "Stephen King",
                         Description = "12 prawdziwych rarytasów od króla horroru. Od krótkich nowel, przez dłuższe opowiadania, po mini powieści. Od klasycznych horrorów, przez kryminały, po prozę obyczajową. Od Derry, przez Castle Rock, po Florydę. Od dreszczy zgrozy, przez dramatyczne napięcie, po łzy rozbawienia.",
@@ -68,7 +68,7 @@ namespace ZamowKsiazke.Models
                         Title = "Instytut",
                         Language = "Polski",
                         ISBN = "9780765068408",
-                        DatePublished = DateTime.Parse("2024-10-4"),
+                        DatePublished = DateTime.Parse("2024-10-04"),
                         Price = 59,
                         Author = "Stephen King",
                         Description = "Instytut Mocny jak To, przerażający jak Podpalaczka! Stephen King powraca do motywów znanych z jego najlepszych książek.",
@@ -92,21 +92,21 @@ namespace ZamowKsiazke.Models
                         Title = "Szepty spoza nicości",
                         Language = "Polski",
                         ISBN = "9780062068987",
-                        DatePublished = DateTime.Parse("2022-10-4"),
+                        DatePublished = DateTime.Parse("2022-10-04"),
                         Price = 29,
                         Author = "Remigiusz Mróz",
                         Description = "Seweryn Zaorski po raz ostatni wraca do Żeromic, by sprzedać dom i na dobre zostawić za sobą tragiczną przeszłość.",
                         ImageUrl = "/images/szepty.jpg"
                     },
-                    
+
                     new Book
                     {
                         Title = "Morderstwo w Mezopotamii",
                         Language = "Polski",
                         ISBN = "9780062068546",
-                        DatePublished = DateTime.Parse("2019-6-4"),
+                        DatePublished = DateTime.Parse("2019-06-04"),
                         Price = 27,
-                        Author = "Ahatha Christie",
+                        Author = "Agatha Christie",
                         Description = "To kryminalna historia o tym jak jeden wakacyjny wyjazd może zamienić się w nieskończoną serię problemów.",
                         ImageUrl = "/images/mezopotamia.jpg"
                     },
@@ -116,7 +116,7 @@ namespace ZamowKsiazke.Models
                         Title = "Venom II",
                         Language = "Polski",
                         ISBN = "9780062068123",
-                        DatePublished = DateTime.Parse("2021-2-2"),
+                        DatePublished = DateTime.Parse("2021-02-02"),
                         Price = 29,
                         Author = "Aleksandra Kołaciuk",
                         Description = "Drugi tom bestsellerowej serii! Historia lubi się powtarzać, Vivian przekonuje się o tym na własnej skórze.",
@@ -128,7 +128,7 @@ namespace ZamowKsiazke.Models
                         Title = "Pacjentka",
                         Language = "Polski",
                         ISBN = "9780062068321",
-                        DatePublished = DateTime.Parse("2021-3-4"),
+                        DatePublished = DateTime.Parse("2021-03-04"),
                         Price = 39,
                         Author = "Michaelides Alex",
                         Description = "Czy człowiek może zmienić się w jednej chwili o 180 stopni? Dowiedz się tego z jednego z najbardziej wyczekiwanych w 2019 roku thrillerów psychologicznych – „Pacjentka” autorstwa Alexa Michaelidesa.",
@@ -140,7 +140,7 @@ namespace ZamowKsiazke.Models
                         Title = "Głusza",
                         Language = "Polski",
                         ISBN = "9780062068357",
-                        DatePublished = DateTime.Parse("2024-10-4"),
+                        DatePublished = DateTime.Parse("2024-10-04"),
                         Price = 49,
                         Author = "Mark Edwards",
                         Description = "Wypoczynek z dala od cywilizacji zmieni się w wakacyjny koszmar.",
@@ -151,8 +151,8 @@ namespace ZamowKsiazke.Models
                     {
                         Title = "Cienie pośród mroku Tom 6",
                         Language = "Polski",
-                        ISBN = "97800620222689",
-                        DatePublished = DateTime.Parse("2024-12-5"),
+                        ISBN = "9780062062268",
+                        DatePublished = DateTime.Parse("2024-12-05"),
                         Price = 59,
                         Author = "Remigiusz Mróz",
                         Description = "W życiu Seweryna i Burzy nie mogło wydarzyć się nic złego, nie kiedy wszystko wreszcie zaczęło im się układać. Nic nie zapowiadało nawałnicy, która miała na nich spaść.",
@@ -164,11 +164,10 @@ namespace ZamowKsiazke.Models
                         Title = "Debiut",
                         Language = "Polski",
                         ISBN = "9780062068000",
-                        DatePublished = DateTime.Parse("2023-11-4"),
+                        DatePublished = DateTime.Parse("2023-11-04"),
                         Price = 25,
                         Author = "Paula Świst",
-                        Description = "W relacjach Aresa i Niny zachodzi znacząca zmiana. 
-                        Do tej pory można je było określić jednym słowem: skomplikowane. Teraz stały się bardzo skomplikowane. A nawet bardziej niż bardzo.",
+                        Description = "W relacjach Aresa i Niny zachodzi znacząca zmiana. Do tej pory można je było określić jednym słowem: skomplikowane. Teraz stały się bardzo skomplikowane. A nawet bardziej niż bardzo.",
                         ImageUrl = "/images/debiut.jpg"
                     },
 
@@ -177,19 +176,19 @@ namespace ZamowKsiazke.Models
                         Title = "Cienie",
                         Language = "Polski",
                         ISBN = "9780062068444",
-                        DatePublished = DateTime.Parse("2023-9-9"),
+                        DatePublished = DateTime.Parse("2023-09-09"),
                         Price = 55,
                         Author = "Wojciech Chmielarz",
                         Description = "Nowa powieść Wojciecha Chmielarza, laureata nagrody Wielkiego Kalibru. Komisarz Jakub Mortka powraca, by rozwikłać tajemnicze zabójstwo.",
                         ImageUrl = "/images/cienie.jpg"
                     },
-                    
+
                     new Book
                     {
                         Title = "Opowiastki na zimowe wieczory. Kubuś i Przyjaciele",
                         Language = "Polski",
                         ISBN = "9780062988334",
-                        DatePublished = DateTime.Parse("2024-9-9"),
+                        DatePublished = DateTime.Parse("2024-09-09"),
                         Price = 35,
                         Author = "Katarzyna Łączyńska",
                         Description = "PRZYJAŹŃ, RADOŚĆ I MOC PRZYGÓD W STUMILOWYM LESIE.",

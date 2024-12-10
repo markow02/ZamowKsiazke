@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke\\ZamowKsiazke.csproj": {}
+    "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke\\ZamowKsiazke.csproj": {
+    "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke\\ZamowKsiazke.csproj",
+        "projectUniqueName": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke.csproj",
         "projectName": "ZamowKsiazke",
-        "projectPath": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke\\ZamowKsiazke.csproj",
+        "projectPath": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke.csproj",
         "packagesPath": "C:\\Users\\Marcel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\ZamowKsiazke\\obj\\",
+        "outputPath": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
