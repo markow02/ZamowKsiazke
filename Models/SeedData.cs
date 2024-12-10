@@ -23,12 +23,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("2024-12-10"),
                         Price = 49,
                         Author = "Andrzej Sapkowski",
-                        Description = "Oto słowa Proroka: zaprawdę powiadam wam, że nastanie chaos w wielu miejscach i ogień często będzie wybuchał.
-                        Słońce rozjaśni się w nocy, a księżyc w ciągu dnia, gwiazdy zaś zaczną spadać. Krew będzie ciec z drzewa, a kamień wyda głos.
-                        Dzikie bestie będą atakować, a niewiasty brzemienne będą rodzić potwory.
-                        I oto sprawdziło się proroctwo i oczom naszym stało się ono widome: niewiasty porodziły potwory.
-                        Wiedźmini są tymi potworami, heroldami chaosu i zguby.
-                        Anonim, Monstrum albo wiedźmina opisanie",
+                        Description = "Oto słowa Proroka: zaprawdę powiadam wam, że nastanie chaos w wielu miejscach i ogień często będzie wybuchał. I oto sprawdziło się proroctwo i oczom naszym stało się ono widome: niewiasty porodziły potwory. Wiedźmini są tymi potworami, heroldami chaosu i zguby.",
                         ImageUrl = "/images/rozdrozekrukow.jpg"
                     },
 
@@ -64,9 +59,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("2024-10-2"),
                         Price = 59,
                         Author = "Stephen King",
-                        Description = "12 prawdziwych rarytasów od króla horroru. Od krótkich nowel, przez dłuższe opowiadania, po mini powieści.
-                        Od klasycznych horrorów, przez kryminały, po prozę obyczajową. Od Derry, przez Castle Rock, po Florydę
-                        Od dreszczy zgrozy, przez dramatyczne napięcie, po łzy rozbawienia.",
+                        Description = "12 prawdziwych rarytasów od króla horroru. Od krótkich nowel, przez dłuższe opowiadania, po mini powieści. Od klasycznych horrorów, przez kryminały, po prozę obyczajową. Od Derry, przez Castle Rock, po Florydę. Od dreszczy zgrozy, przez dramatyczne napięcie, po łzy rozbawienia.",
                         ImageUrl = "/images/immroczniejtymlepiej.jpg"
                     },
 
@@ -126,9 +119,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("2021-2-2"),
                         Price = 29,
                         Author = "Aleksandra Kołaciuk",
-                        Description = "Drugi tom bestsellerowej serii! Historia lubi się powtarzać, Vivian przekonuje się o tym na własnej skórze. 
-                        Dziewczyna nie ma kontaktu z Venomem od czterdziestu trzech dni, w czasie których próbuje wrócić do normalnego życia i 
-                        zapomnieć o tym, co łączyło ją ze znanym przestępcą. Jednak doskonale zdaje sobie sprawę, że nadal potrzebuje jego pomocy.",
+                        Description = "Drugi tom bestsellerowej serii! Historia lubi się powtarzać, Vivian przekonuje się o tym na własnej skórze.",
                         ImageUrl = "/images/venom2.jpg"
                     },
 
@@ -140,9 +131,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("2021-3-4"),
                         Price = 39,
                         Author = "Michaelides Alex",
-                        Description = "Czy człowiek może zmienić się w jednej chwili o 180 stopni? 
-                        Co takiego kryje się w ludzkiej psychice, że niektórzy są w stanie z zimną krwią pozbawiać życia innych? 
-                        Dowiedz się tego z jednego z najbardziej wyczekiwanych w 2019 roku thrillerów psychologicznych – „Pacjentka” autorstwa Alexa Michaelidesa.",
+                        Description = "Czy człowiek może zmienić się w jednej chwili o 180 stopni? Dowiedz się tego z jednego z najbardziej wyczekiwanych w 2019 roku thrillerów psychologicznych – „Pacjentka” autorstwa Alexa Michaelidesa.",
                         ImageUrl = "/images/pacjentka.jpg"
                     },
 
@@ -166,9 +155,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("2024-12-5"),
                         Price = 59,
                         Author = "Remigiusz Mróz",
-                        Description = "W życiu Seweryna i Burzy nie mogło wydarzyć się nic złego, nie kiedy wszystko wreszcie zaczęło im się układać. 
-                        Zamieszkali razem, zaczęli budować patchworkową rodzinę i uczyć się wspólnej egzystencji. 
-                        Spokój, który obydwoje odczuwali, zdawał się wieczny i niezachwiany. Nic nie zapowiadało nawałnicy, która miała na nich spaść.",
+                        Description = "W życiu Seweryna i Burzy nie mogło wydarzyć się nic złego, nie kiedy wszystko wreszcie zaczęło im się układać. Nic nie zapowiadało nawałnicy, która miała na nich spaść.",
                         ImageUrl = "/images/cienieposrodmroku.jpg"
                     },
 
@@ -193,8 +180,7 @@ namespace ZamowKsiazke.Models
                         DatePublished = DateTime.Parse("2023-9-9"),
                         Price = 55,
                         Author = "Wojciech Chmielarz",
-                        Description = "Nowa powieść Wojciecha Chmielarza, laureata nagrody Wielkiego Kalibru.
-                        Komisarz Jakub Mortka powraca, by rozwikłać tajemnicze zabójstwo.",
+                        Description = "Nowa powieść Wojciecha Chmielarza, laureata nagrody Wielkiego Kalibru. Komisarz Jakub Mortka powraca, by rozwikłać tajemnicze zabójstwo.",
                         ImageUrl = "/images/cienie.jpg"
                     },
                     
