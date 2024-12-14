@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ZamowKsiazke.Data;
 using ZamowKsiazke.Models;
 
@@ -22,6 +23,7 @@ namespace ZamowKsiazke.Controllers
             return View(_cart);
         }
 
+        [Authorize]
         public IActionResult AddToCart(int id)
         {
             var selectedBook = GetBookById(id);

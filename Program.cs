@@ -18,7 +18,10 @@ builder.Services.AddDbContext<ZamowKsiazkeContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ZamowKsiazkeContext")
                          ?? throw new InvalidOperationException("Connection string 'ZamowKsiazkeContext' not found.")));
 
-builder.Services.AddDefaultIdentity<DefaultUser>().AddEntityFrameworkStores<ZamowKsiazkeContext>();
+builder.Services.AddDefaultIdentity<DefaultUser>()
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<ZamowKsiazkeContext>();
+
 
 //builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

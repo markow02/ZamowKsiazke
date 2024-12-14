@@ -34,9 +34,8 @@ namespace ZamowKsiazke.Areas.Identity.Pages.Account
             }
             else
             {
-                // This needs to be a redirect so that the browser performs a new
-                // request and the identity for the user gets updated.
-                return RedirectToPage();
+                // Redirect to the Store page after logout
+                return RedirectToPage("/Store/Index");
             }
         }
     }
