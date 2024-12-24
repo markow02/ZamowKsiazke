@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,5 +19,7 @@ namespace ZamowKsiazke.Data
         public DbSet<CartItem> CartItems { get; set; } = default!;
         public DbSet<Order> Orders { get; set; } = default!;
         public DbSet<OrderItem> OrderItems { get; set; } = default!;
+        public DbSet<UserActivity> UserActivities { get; set; } = default!;
+        public DbSet<BookBorrowing> BookBorrowings { get; set; } = default!;
     }
 }

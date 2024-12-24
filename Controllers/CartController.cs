@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿﻿﻿﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ZamowKsiazke.Data;
 using ZamowKsiazke.Models;
@@ -23,7 +23,6 @@ namespace ZamowKsiazke.Controllers
             return View(_cart);
         }
 
-        [Authorize]
         public IActionResult AddToCart(int id)
         {
             var selectedBook = GetBookById(id);
@@ -31,8 +30,11 @@ namespace ZamowKsiazke.Controllers
             if (selectedBook != null)
             {
                 _cart.AddToCart(selectedBook, quantity: 1);
+                TempData["Success"] = "Książka została dodana do koszyka";
+                return RedirectToAction("Index", "Cart");
             }
 
+            TempData["Error"] = "Nie można dodać książki do koszyka";
             return RedirectToAction("Index", "Store");
         }
 
@@ -72,7 +74,7 @@ namespace ZamowKsiazke.Controllers
             return RedirectToAction("Index");
         }
 
-        public Book GetBookById(int id)
+        public Book? GetBookById(int id)
         {
             return _context.Book.FirstOrDefault(b => b.Id == id);
         }

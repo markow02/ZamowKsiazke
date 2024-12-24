@@ -1,11 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿﻿﻿using System.ComponentModel.DataAnnotations;
 
 namespace ZamowKsiazke.ViewModel
 {
     public class CreateRoleViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Nazwa roli jest wymagana")]
         [Display(Name = "Role")]
-        public string RoleName { get; set; }
+        public string RoleName { get; set; } = string.Empty;
     }
 }

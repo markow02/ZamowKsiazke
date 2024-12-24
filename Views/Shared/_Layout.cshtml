@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="utf-8" />
@@ -23,7 +23,20 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Store" asp-action="Index">Sklep</a>
-                        </li>   
+                        </li>
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="BookBorrowing" asp-action="MyBorrowings">
+                                    <i class="fa-solid fa-book-reader"></i> Moje wypożyczenia
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Order" asp-action="MyOrders">
+                                    <i class="fa-solid fa-shopping-bag"></i> Moje zamówienia
+                                </a>
+                            </li>
+                        }
                         @if(User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
@@ -31,6 +44,27 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="ListAllRoles">Role</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Raporty
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="ActivityReport">Raport Aktywności</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="UserLoginReport">Statystyki Logowań</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="RecentActivities">Ostatnie Aktywności</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="BookActivityReport">
+                                        <i class="fa-solid fa-book-open"></i> Aktywność Książek
+                                    </a></li>
+                                    <li><a class="dropdown-item" asp-controller="BookBorrowing" asp-action="PopularBooks">Popularne Książki</a></li>
+                                    <li><a class="dropdown-item" asp-controller="BookBorrowing" asp-action="ManageRequests">
+                                        <i class="fa-solid fa-list-check"></i> Zarządzaj Wypożyczeniami
+                                    </a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="ManageOrders">
+                                        <i class="fa-solid fa-money-bill"></i> Zarządzaj Zamówieniami
+                                    </a></li>
+                                </ul>
                             </li>
                         }     
                     </ul>

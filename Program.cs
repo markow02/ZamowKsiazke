@@ -27,6 +27,8 @@ builder.Services.AddDefaultIdentity<DefaultUser>()
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<Cart>(sp => Cart.GetCart(sp));
 builder.Services.AddScoped<IOrderService, OrderService>(); // Register IOrderService
+builder.Services.AddScoped<IUserActivityService, UserActivityService>(); // Register IUserActivityService
+builder.Services.AddScoped<IBookBorrowingService, BookBorrowingService>(); // Register IBookBorrowingService
 
 builder.Services.AddDistributedMemoryCache();
 
@@ -43,10 +45,44 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
+    var userManager = services.GetRequiredService<UserManager<DefaultUser>>();
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
     try
     {
+        // Seed default data
         SeedData.Initialize(services);
+
+        // Create Admin Role if it doesn't exist
+        if (!await roleManager.RoleExistsAsync("Admin"))
+        {
+            await roleManager.CreateAsync(new IdentityRole("Admin"));
+        }
+
+        // Create Admin User if it doesn't exist
+        var adminEmail = "admin@example.com";
+        var adminUser = await userManager.FindByEmailAsync(adminEmail);
+
+        if (adminUser == null)
+        {
+            var admin = new DefaultUser
+            {
+                UserName = adminEmail,
+                Email = adminEmail,
+                FirstName = "Admin",
+                LastName = "User",
+                Address = "Admin Address",
+                City = "Admin City",
+                ZipCode = "00-000"
+            };
+
+            var result = await userManager.CreateAsync(admin, "Admin123!");
+
+            if (result.Succeeded)
+            {
+                await userManager.AddToRoleAsync(admin, "Admin");
+            }
+        }
     }
     catch (Exception ex)
     {

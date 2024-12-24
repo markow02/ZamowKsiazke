@@ -1,4 +1,4 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
+﻿﻿﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 #nullable disable
 
@@ -15,6 +15,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using ZamowKsiazke.Models;
+using ZamowKsiazke.Services.Interfaces;
+using ZamowKsiazke.Services.Extensions;
 
 namespace ZamowKsiazke.Areas.Identity.Pages.Account
 {
@@ -22,11 +24,19 @@ namespace ZamowKsiazke.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<DefaultUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly IUserActivityService _activityService;
+        private readonly UserManager<DefaultUser> _userManager;
 
-        public LoginModel(SignInManager<DefaultUser> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(
+            SignInManager<DefaultUser> signInManager, 
+            ILogger<LoginModel> logger,
+            IUserActivityService activityService,
+            UserManager<DefaultUser> userManager)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _activityService = activityService;
+            _userManager = userManager;
         }
 
         /// <summary>
@@ -116,6 +126,11 @@ namespace ZamowKsiazke.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
+                    var user = await _userManager.FindByEmailAsync(Input.Email);
+                    if (user != null)
+                    {
+                        await _activityService.LogLoginAsync(user.Id);
+                    }
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)

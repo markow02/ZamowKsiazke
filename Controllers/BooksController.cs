@@ -1,22 +1,28 @@
-﻿using System;
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using ZamowKsiazke.Data;
 using ZamowKsiazke.Models;
+using ZamowKsiazke.Services.Interfaces;
+using ZamowKsiazke.Services.Extensions;
 
 namespace ZamowKsiazke.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class BooksController : Controller
     {
         private readonly ZamowKsiazkeContext _context;
+        private readonly IUserActivityService _activityService;
 
-        public BooksController(ZamowKsiazkeContext context)
+        public BooksController(ZamowKsiazkeContext context, IUserActivityService activityService)
         {
             _context = context;
+            _activityService = activityService;
         }
 
         // GET: Books
@@ -54,12 +60,17 @@ namespace ZamowKsiazke.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,Title,Description,Language,ISBN,DatePublished,Price,Author,ImageUrl")] Book book)
+        public async Task<IActionResult> Create([Bind("Id,Title,Description,Language,ISBN,DatePublished,Price,Author,ImageUrl,IsAvailableForBorrowing,MaxBorrowingDays,BorrowingPrice,StockQuantity")] Book book)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(book);
                 await _context.SaveChangesAsync();
+                var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+                if (userId != null)
+                {
+                    await _activityService.LogBookActionAsync(userId, "Create", book.Id.ToString());
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(book);
@@ -86,7 +97,7 @@ namespace ZamowKsiazke.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,Title,Description,Language,ISBN,DatePublished,Price,Author,ImageUrl")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Description,Language,ISBN,DatePublished,Price,Author,ImageUrl,IsAvailableForBorrowing,MaxBorrowingDays,BorrowingPrice,StockQuantity")] Book book)
         {
             if (id != book.Id)
             {
@@ -99,6 +110,11 @@ namespace ZamowKsiazke.Controllers
                 {
                     _context.Update(book);
                     await _context.SaveChangesAsync();
+                    var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+                    if (userId != null)
+                    {
+                        await _activityService.LogBookActionAsync(userId, "Update", book.Id.ToString());
+                    }
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -142,10 +158,15 @@ namespace ZamowKsiazke.Controllers
             var book = await _context.Book.FindAsync(id);
             if (book != null)
             {
+                var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
                 _context.Book.Remove(book);
+                await _context.SaveChangesAsync();
+                
+                if (userId != null)
+                {
+                    await _activityService.LogBookActionAsync(userId, "Delete", id.ToString());
+                }
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

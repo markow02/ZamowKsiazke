@@ -1,45 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\",
+  "WorkspaceRootPath": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\marcel\\source\\repos\\zamowksiazke\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZamowKsiazkeContext_90e707f5_373d_4e2c_b883_d27987c42d34/True/SqlTable/dbo.OrderItems.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZamowKsiazkeContext_90e707f5_373d_4e2c_b883_d27987c42d34/True/SqlTable/dbo.Orders.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZamowKsiazkeContext_90e707f5_373d_4e2c_b883_d27987c42d34/True/SqlTable/dbo.CartItems.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZamowKsiazkeContext_90e707f5_373d_4e2c_b883_d27987c42d34/True/SqlTable/dbo.Book.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\mikelos\\source\\repos\\zamowksiazke\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\marcel\\source\\repos\\zamowksiazke\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\mikelos\\source\\repos\\zamowksiazke\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|solutionrelative:models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\marcel\\source\\repos\\zamowksiazke\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\mikelos\\source\\repos\\zamowksiazke\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\marcel\\source\\repos\\zamowksiazke\\migrations\\20241130172334_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\mikelos\\source\\repos\\zamowksiazke\\migrations\\20241130172334_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|solutionrelative:migrations\\20241130172334_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\marcel\\source\\repos\\zamowksiazke\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\mikelos\\source\\repos\\zamowksiazke\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\marcel\\source\\repos\\zamowksiazke\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\mikelos\\source\\repos\\zamowksiazke\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\marcel\\source\\repos\\zamowksiazke\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\mikelos\\source\\repos\\zamowksiazke\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\marcel\\source\\repos\\zamowksiazke\\views\\store\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\mikelos\\source\\repos\\zamowksiazke\\views\\store\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|solutionrelative:views\\store\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\marcel\\source\\repos\\zamowksiazke\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\mikelos\\source\\repos\\zamowksiazke\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\marcel\\source\\repos\\zamowksiazke\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|c:\\users\\mikelos\\source\\repos\\zamowksiazke\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95772955-82E1-41ED-B2B7-400DBA921576}|ZamowKsiazke.csproj|solutionrelative:models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,50 +66,88 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "Services\\OrderService.cs",
-              "ToolTip": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Services\\OrderService.cs",
-              "RelativeToolTip": "Services\\OrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T21:54:18.05Z",
+              "DocumentIndex": 1,
+              "Title": "dbo.Orders [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZamowKsiazkeContext_90e707f5_373d_4e2c_b883_d27987c42d34/True/SqlTable/dbo.Orders.sql",
+              "ToolTip": "dbo.Orders [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-22T21:34:39.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "dbo.OrderItems [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZamowKsiazkeContext_90e707f5_373d_4e2c_b883_d27987c42d34/True/SqlTable/dbo.OrderItems.sql",
+              "ToolTip": "dbo.OrderItems [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-22T21:34:28.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.CartItems [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZamowKsiazkeContext_90e707f5_373d_4e2c_b883_d27987c42d34/True/SqlTable/dbo.CartItems.sql",
+              "ToolTip": "dbo.CartItems [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-22T21:34:23.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.Book [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZamowKsiazkeContext_90e707f5_373d_4e2c_b883_d27987c42d34/True/SqlTable/dbo.Book.sql",
+              "ToolTip": "dbo.Book [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-22T21:34:18.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Services\\OrderService.cs",
+              "RelativeToolTip": "Services\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T21:54:18.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Models\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Models\\Book.cs",
               "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBIAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T21:38:58.763Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "20241130172334_init.cs",
-              "DocumentMoniker": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Migrations\\20241130172334_init.cs",
+              "DocumentMoniker": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Migrations\\20241130172334_init.cs",
               "RelativeDocumentMoniker": "Migrations\\20241130172334_init.cs",
-              "ToolTip": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Migrations\\20241130172334_init.cs",
+              "ToolTip": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Migrations\\20241130172334_init.cs",
               "RelativeToolTip": "Migrations\\20241130172334_init.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T12:24:16.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T12:24:16.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Program.cs",
+              "ToolTip": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -105,24 +155,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Models\\SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Models\\SeedData.cs",
               "RelativeDocumentMoniker": "Models\\SeedData.cs",
-              "ToolTip": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Models\\SeedData.cs",
+              "ToolTip": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Models\\SeedData.cs",
               "RelativeToolTip": "Models\\SeedData.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAqwBkAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T12:15:08.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T12:15:08.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Models\\Order.cs",
+              "DocumentMoniker": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Models\\Order.cs",
               "RelativeToolTip": "Models\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -130,11 +179,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Controllers\\CartController.cs",
+              "DocumentMoniker": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Controllers\\CartController.cs",
               "RelativeToolTip": "Controllers\\CartController.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAEwEoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -142,11 +191,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Views\\Store\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Views\\Store\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Store\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Views\\Store\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Views\\Store\\Index.cshtml",
               "RelativeToolTip": "Views\\Store\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -154,11 +203,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Models\\Cart.cs",
+              "DocumentMoniker": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "Models\\Cart.cs",
-              "ToolTip": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Models\\Cart.cs",
               "RelativeToolTip": "Models\\Cart.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAowFMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -166,15 +215,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Views\\Cart\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Marcel\\source\\repos\\ZamowKsiazke\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mikelos\\source\\repos\\ZamowKsiazke\\Views\\Cart\\Index.cshtml",
               "RelativeToolTip": "Views\\Cart\\Index.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAIBJwCQAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-07T11:31:53.573Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
