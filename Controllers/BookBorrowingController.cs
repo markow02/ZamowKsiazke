@@ -52,7 +52,7 @@ namespace ZamowKsiazke.Controllers
             try
             {
                 await _borrowingService.BorrowBookAsync(userId, bookId, borrowingDays, contactPreference);
-                TempData["Success"] = "Zamówienie wypożyczenia zostało przyjęte. Sklep skontaktuje się z Tobą w celu opłaty książki stacjonarnie.";
+                TempData["Success"] = "Twoje zamówienie na wypożyczenie książki zostało przyjęte.";
             }
             catch (InvalidOperationException ex)
             {

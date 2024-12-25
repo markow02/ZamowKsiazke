@@ -1,7 +1,7 @@
 @model IEnumerable<ZamowKsiazke.Models.UserActivity>
 
 <div class="container mt-4">
-    <h2>Ostatnie Aktywności Użytkowników</h2>
+    <h2>Ostatnia aktywność</h2>
     <p class="text-muted">Pokazuje 50 ostatnich aktywności w systemie</p>
 
     <div class="card">
@@ -9,10 +9,10 @@
             <h4>Historia Aktywności</h4>
             <div class="btn-group">
                 <a href="@Url.Action("ActivityReport")" class="btn btn-outline-primary">
-                    <i class="fas fa-chart-bar"></i> Pełny Raport
+                    <i class="fas fa-chart-bar"></i> Pełny raport
                 </a>
                 <a href="@Url.Action("UserLoginReport")" class="btn btn-outline-primary">
-                    <i class="fas fa-sign-in-alt"></i> Statystyki Logowań
+                    <i class="fas fa-sign-in-alt"></i> Statystyki logowań
                 </a>
             </div>
         </div>
@@ -69,7 +69,7 @@
     <div class="mt-4">
         <div class="alert alert-info">
             <i class="fas fa-info-circle"></i>
-            Aktywności są sortowane od najnowszych do najstarszych. Kliknij "Pełny Raport" aby zobaczyć szczegółowe statystyki.
+            Aktywności są sortowane od najnowszych do najstarszych. Kliknij "Pełny raport" aby zobaczyć szczegółowe statystyki.
         </div>
     </div>
 </div>

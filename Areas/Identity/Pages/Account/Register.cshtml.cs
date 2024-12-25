@@ -71,53 +71,45 @@ namespace ZamowKsiazke.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
-            [Required]
+            [Required(ErrorMessage = "Imię jest wymagane.")]
             [DataType(DataType.Text)]
-            [Display(Name = "First name")]
+            [Display(Name = "Imię")]
             public string FirstName { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "Nazwisko jest wymagane.")]
             [DataType(DataType.Text)]
-            [Display(Name = "Last name")]
+            [Display(Name = "Nazwisko")]
             public string LastName { get; set; }
 
-            [Required]
-            [EmailAddress]
+            [Required(ErrorMessage = "Adres jest wymagany.")]
+            [DataType(DataType.Text)]
+            [Display(Name = "Adres")]
+            public string Address { get; set; }
+
+            [Required(ErrorMessage = "Kod pocztowy jest wymagany.")]
+            [DataType(DataType.PostalCode)]
+            [Display(Name = "Kod pocztowy")]
+            public string ZipCode { get; set; }
+
+            [Required(ErrorMessage = "Miasto jest wymagane.")]
+            [DataType(DataType.Text)]
+            [Display(Name = "Miasto")]
+            public string City { get; set; }
+
+            [Required(ErrorMessage = "Email jest wymagany.")]
+            [EmailAddress(ErrorMessage = "Proszę wpisać poprawny adres email.")]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
-            [DataType(DataType.Text)]
-            [Display(Name = "Address")]
-            public string Address { get; set; }
-
-            [Required]
-            [DataType(DataType.PostalCode)]
-            [Display(Name = "Zip Code")]
-            public string ZipCode { get; set; }
-
-            [Required]
-            [DataType(DataType.Text)]
-            [Display(Name = "City")]
-            public string City { get; set; }
-
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [Required(ErrorMessage = "Hasło jest wymagane.")]
+            [StringLength(100, ErrorMessage = "Hasło musi mieć co najmniej {2} i maksymalnie {1} znaków.", MinimumLength = 6)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "Hasło")]
             public string Password { get; set; }
 
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Display(Name = "Potwierdź hasło")]
+            [Compare("Password", ErrorMessage = "Hasło i potwierdzenie hasła nie pasują do siebie.")]
             public string ConfirmPassword { get; set; }
         }
 

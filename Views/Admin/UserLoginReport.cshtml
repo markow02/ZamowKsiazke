@@ -5,8 +5,16 @@
     <p class="text-muted">Statystyki z ostatnich 30 dni</p>
 
     <div class="card">
-        <div class="card-header">
+        <div class="card-header d-flex justify-content-between align-items-center">
             <h4>Statystyki Logowań</h4>
+            <div class="btn-group">
+                <a href="@Url.Action("ActivityReport")" class="btn btn-outline-primary">
+                    <i class="fas fa-chart-bar"></i> Pełny raport
+                </a>
+                <a href="@Url.Action("RecentActivities")" class="btn btn-outline-primary">
+                    <i class="fas fa-sign-in-alt"></i> Ostatnia aktywność
+                </a>
+            </div>
         </div>
         <div class="card-body">
             <div class="table-responsive">

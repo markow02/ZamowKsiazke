@@ -30,3 +30,14 @@
     background-color: forestgreen;
     border: 1px solid forestgreen;
 }
+
+.navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}

@@ -28,7 +28,7 @@ namespace ZamowKsiazke.Areas.Identity.Pages.Account
         private readonly UserManager<DefaultUser> _userManager;
 
         public LoginModel(
-            SignInManager<DefaultUser> signInManager, 
+            SignInManager<DefaultUser> signInManager,
             ILogger<LoginModel> logger,
             IUserActivityService activityService,
             UserManager<DefaultUser> userManager)
@@ -71,27 +71,15 @@ namespace ZamowKsiazke.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Required]
-            [EmailAddress]
+            [Required(ErrorMessage = "Email jest wymagany.")]
+            [EmailAddress(ErrorMessage = "Proszę wpisać poprawny adres email.")]
             public string Email { get; set; }
 
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Required]
+            [Required(ErrorMessage = "Hasło jest wymagane.")]
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Display(Name = "Remember me?")]
+            [Display(Name = "Zapamiętaj mnie?")]
             public bool RememberMe { get; set; }
         }
 
@@ -144,7 +132,7 @@ namespace ZamowKsiazke.Areas.Identity.Pages.Account
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    ModelState.AddModelError(string.Empty, "Nieudana próba logowania.");
                     return Page();
                 }
             }

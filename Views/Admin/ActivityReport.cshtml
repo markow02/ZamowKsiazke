@@ -1,14 +1,14 @@
 @model ZamowKsiazke.ViewModel.UserActivityReportViewModel
 
 <div class="container mt-4">
-    <h2>Raport Aktywności Użytkowników</h2>
+    <h2>Raport aktywności użytkowników</h2>
     <p class="text-muted">Wygenerowano: @Model.ReportGeneratedAt.ToLocalTime()</p>
 
     <div class="row">
         <div class="col-md-6">
             <div class="card mb-4">
                 <div class="card-header">
-                    <h4>Statystyki Ogólne</h4>
+                    <h4>Statystyki ogólne</h4>
                 </div>
                 <div class="card-body">
                     <p><strong>Całkowita liczba aktywności:</strong> @Model.TotalActivities</p>
@@ -20,7 +20,7 @@
         <div class="col-md-6">
             <div class="card mb-4">
                 <div class="card-header">
-                    <h4>Typy Aktywności</h4>
+                    <h4>Rodzaj aktywności</h4>
                 </div>
                 <div class="card-body">
                     @foreach (var stat in Model.ActivityTypeStats)
@@ -36,8 +36,13 @@
     </div>
 
     <div class="card mb-4">
-        <div class="card-header">
-            <h4>Ostatnie Aktywności</h4>
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h4>Ostatnia Aktywność</h4>
+            <div class="btn-group">
+                <a href="RecentActivities" class="btn btn-outline-primary">
+                    <i class="fas fa-list"></i> Pokaż więcej
+                </a>
+            </div>
         </div>
         <div class="card-body">
             <div class="table-responsive">
